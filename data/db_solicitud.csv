@@ -1,0 +1,103 @@
+customer_id,departamento,mensaje,resumen,solucionado
+15,RRHH,Nuestro plan de beneficios es insuficiente,Nuestro plan de beneficios es insuficiente para satisfacer las necesidades de los empleados.,False
+4,Legales,No se nos ha dado suficiente información sobre los procesos de litigio de la empresa,La empresa carece de información suficiente sobre sus procesos de litigio.,False
+6,Marketing,No hemos recibido ningún lead de marketing en semanas,No hay nuevos leads de marketing en las últimas semanas.,False
+9,RRHH,La empresa no está cumpliendo con el salario mínimo,La compañía está incumpliendo el salario mínimo establecido.,False
+10,Legales,No estoy de acuerdo con las políticas de la empresa,No se aceptan las políticas de la empresa.,False
+4,IT,La base de datos está desactualizada,La base de datos no contiene la información más reciente.,False
+15,Legales,La empresa no está respetando mis derechos de propiedad intelectual,La empresa está incumpliendo con sus responsabilidades de respetar los derechos de propiedad intelectual del empleado.,False
+12,Marketing,No sabemos cómo mejorar nuestro SEO,Necesitamos encontrar maneras de mejorar nuestro SEO para tener mayor visibilidad en los resultados de búsqueda.,False
+19,Marketing,No sabemos cómo mejorar nuestro SEO,La empresa está buscando nuevas formas de aumentar el índice de búsqueda (SEO) para mejorar el posicionamiento de su sitio web.,False
+1,Marketing,No hemos recibido ningún lead de marketing en semanas,No hay nuevos leads de marketing receptados en varias semanas.,False
+13,RRHH,La empresa no está respetando mis derechos como trabajador,La empresa no cumple con los derechos laborales del trabajador.,False
+4,RRHH,La empresa no está respetando mis derechos como trabajador,La empresa está incumpliendo los derechos del trabajador.,False
+2,IT,No puedo imprimir desde mi computadora,La computadora no imprime.,False
+11,Legales,No se nos ha dado suficiente información sobre los procesos de litigio de la empresa,La empresa carece de información sobre sus procesos de litigio.,False
+1,Marketing,No sabemos cómo medir el éxito de nuestras campañas,Estamos buscando una forma de medir el éxito de nuestras campañas.,False
+1,RRHH,No me han pagado a tiempo,No recibí el pago a tiempo.,False
+7,IT,No puedo acceder a la red desde mi computadora,La computadora no tiene acceso a la red.,False
+14,Marketing,No sabemos cómo medir el éxito de nuestras campañas,La eficacia de las campañas publicitarias no es fácil de medir.,False
+5,IT,No puedo imprimir desde mi computadora,Problema de impresión desde computadora.,False
+17,IT,Mi computadora se congela constantemente,La computadora se congela con frecuencia.,False
+8,RRHH,No se nos ha dado suficiente información sobre las políticas de seguridad de datos,Se solicita mayor información sobre las políticas de seguridad de datos para poder evaluar plenamente la seguridad de los datos.,False
+20,Legales,La empresa no está cumpliendo con el salario mínimo,La empresa está incumpliendo con el pago del salario mínimo establecido.,False
+19,Marketing,No estamos llegando a nuestro público objetivo,Tenemos problemas alcanzando al grupo al que nos dirigimos.,False
+18,RRHH,No estoy de acuerdo con el trato que se le da a los empleados,Estoy en desacuerdo con la forma en que se tratan a los empleados.,False
+7,Marketing,No estamos llegando a nuestro público objetivo,No estamos alcanzando los resultados deseados con nuestro público objetivo.,False
+11,RRHH,No se nos ha dado suficiente información sobre los protocolos de salud y seguridad,Se solicita información adicional sobre los protocolos de salud y seguridad.,False
+8,RRHH,No tenemos suficiente personal para manejar la carga de trabajo,Existe una falta de personal para realizar el trabajo que se requiere.,False
+17,Legales,No se nos ha dado suficiente información sobre los derechos de propiedad intelectual,No hay suficiente información sobre los derechos de propiedad intelectual.,False
+20,Legales,No se nos ha dado suficiente información sobre las políticas de privacidad,No se ha proporcionado información suficiente sobre las políticas de privacidad.,False
+17,Legales,No estoy de acuerdo con el uso que la empresa hace de mi información personal,No estoy satisfecho con el uso que la empresa hace con mis datos personales.,False
+8,RRHH,No se nos ha dado suficiente información sobre los derechos de los empleados,Los empleados no han recibido la información adecuada sobre sus derechos.,False
+15,Marketing,No estamos llegando a nuestro público objetivo,No estamos alcanzando los resultados deseados con nuestra estrategia de marketing dirigida a nuestro público objetivo.,False
+4,Legales,No se nos ha dado suficiente información sobre los derechos de propiedad intelectual,Se ha informado insuficientemente sobre los derechos de propiedad intelectual.,False
+9,Legales,No estoy de acuerdo con los términos del contrato,Rechazo los términos del contrato.,False
+9,RRHH,No tenemos suficiente personal para manejar la carga de trabajo,La cantidad de personal actual no es suficiente para completar la carga de trabajo.,False
+9,RRHH,No tenemos suficiente personal para manejar la carga de trabajo,El equipo actual no es suficiente para cumplir con el volumen de trabajo.,False
+6,RRHH,El equipo de RRHH no responde a mis correos electrónicos,El equipo de Recursos Humanos no está respondiendo a los correos electrónicos enviados.,False
+5,RRHH,La empresa no está respetando mis derechos como trabajador,La empresa está violando los derechos del trabajador.,False
+6,IT,Nuestro sitio web no aparece en los primeros resultados de búsqueda,Nuestro sitio web no está siendo visible en los primeros resultados de búsqueda.,False
+15,Legales,No he recibido una copia de mi contrato,No he tenido acceso al contrato que se me ha asignado.,False
+8,Legales,No se nos ha dado suficiente información sobre los derechos de los empleados,Los empleados necesitan información sobre sus derechos.,False
+7,RRHH,El equipo de RRHH no responde a mis correos electrónicos,El equipo de Recursos Humanos no ha dado respuesta a los correos electrónicos enviados.,False
+19,RRHH,No me han pagado a tiempo,No se me ha pagado a tiempo.,False
+10,Legales,La empresa no está manejando adecuadamente los procesos de litigio,La gestión por parte de la empresa de los procesos de litigio no es adecuada.,False
+6,Marketing,No tenemos suficiente presupuesto para marketing,Presupuesto para marketing insuficiente.,False
+20,Marketing,Nuestras campañas publicitarias no generan resultados,Las campañas publicitarias no están produciendo los resultados esperados.,False
+9,IT,Mi computadora se congela constantemente,Mi computadora presenta problemas de congelamiento con frecuencia.,False
+4,Marketing,El diseño del sitio web es poco atractivo,El sitio web no goza de un buen diseño que invite a los usuarios a interactuar con el mismo.,False
+8,Legales,No estoy de acuerdo con las políticas de la empresa,No concuerdo con las políticas de la empresa.,False
+1,Legales,No se nos ha dado suficiente información sobre los derechos de propiedad intelectual,Se ha indicado que hay una falta de información respecto a los derechos de propiedad intelectual.,False
+12,RRHH,No se nos ha dado suficiente información sobre las políticas de seguridad de datos,La información sobre las políticas de seguridad de datos no ha sido suficiente.,False
+16,Legales,No se nos ha dado suficiente información sobre las políticas de privacidad,Se ha informado insuficientemente sobre las políticas de privacidad.,False
+11,Marketing,No sabemos cómo mejorar nuestro SEO,No tenemos claro qué acciones tomar para mejorar el SEO de nuestra empresa.,False
+20,Legales,La empresa no está cumpliendo con los términos del contrato,La empresa está incumpliendo con los términos del contrato.,False
+1,Marketing,No hemos recibido ningún lead de marketing en semanas,No hay resultados de marketing en varias semanas.,False
+11,Legales,No estoy seguro de si la empresa está cumpliendo con las regulaciones,La empresa no está segura de si está cumpliendo con las regulaciones.,False
+7,RRHH,No he recibido una copia de mi contrato,No había recibido una copia del contrato.,False
+12,IT,El software es demasiado complicado de usar,El software es difícil de usar.,False
+13,RRHH,No estoy de acuerdo con el trato que se le da a los empleados,No acepto la forma en que los empleados son tratados.,False
+4,Legales,La empresa está utilizando mi información personal para fines no autorizados,La empresa está haciendo uso no autorizado de los datos personales del individuo.,False
+14,RRHH,No me han pagado a tiempo,No he recibido el pago a la fecha esperada.,False
+6,IT,El software es demasiado complicado de usar,El software es difícil de usar.,False
+11,RRHH,El equipo de RRHH no responde a mis correos electrónicos,El equipo de Recursos Humanos no ha respondido a los correos electrónicos enviados.,False
+12,RRHH,No he recibido retroalimentación en mi trabajo en meses,El remitente ha expresado que no ha tenido ninguna retroalimentación sobre su trabajo en los últimos meses.,False
+20,Legales,No estoy seguro de si la empresa está cumpliendo con las regulaciones,La incertidumbre sobre si la empresa está siguiendo las regulaciones existentes.,False
+20,IT,Mi computadora se congela constantemente,Mi computadora tiene un problema de congelamiento frecuente.,False
+8,IT,La base de datos está desactualizada,La base de datos no se encuentra actualizada.,False
+13,Legales,La empresa no está manejando adecuadamente los procesos de litigio,La empresa no está gestionando de manera adecuada las gestiones y los procesos relacionados con los casos en litigio.,False
+1,Legales,No estoy seguro de si la empresa está cumpliendo con las regulaciones,La empresa podría no estar cumpliendo con las regulaciones.,False
+11,RRHH,No tenemos suficiente personal para manejar la carga de trabajo,El personal no es suficiente para poder satisfacer la cantidad de trabajo requerida.,False
+8,IT,El sitio web se carga demasiado lento,El sitio web tarda demasiado en cargarse.,False
+2,RRHH,El equipo de RRHH no responde a mis correos electrónicos,El equipo de Recursos Humanos no ha respondido a los correos electrónicos enviados.,False
+20,IT,La base de datos está desactualizada,La base de datos necesita ser actualizada.,False
+18,Legales,La empresa no está protegiendo adecuadamente mis datos personales,La empresa no está ofreciendo la protección adecuada a los datos personales de los usuarios.,False
+10,Legales,No se nos ha dado suficiente información sobre los procesos de litigio de la empresa,La empresa carece de información suficiente acerca de los procedimientos de litigio.,False
+12,IT,El servidor está caído otra vez,Servidor caído de nuevo.,False
+15,IT,El sitio web se carga demasiado lento,El sitio web está funcionando con una velocidad de carga excesivamente baja.,False
+11,Marketing,No sabemos cómo mejorar nuestro SEO,Necesitamos encontrar maneras de mejorar el SEO de nuestro sitio web para llegar a más personas.,False
+5,IT,No se nos ha dado suficiente información sobre las políticas de seguridad de datos,Se nos ha proporcionado insuficiente información sobre las políticas de seguridad de datos.,False
+1,IT,No puedo imprimir desde mi computadora,Mi computadora no imprime.,False
+20,Legales,La empresa está utilizando mi información personal para fines no autorizados,La empresa está usando datos personales sin permiso.,False
+12,RRHH,Nuestro plan de beneficios es insuficiente,El plan de beneficios actual no satisface las necesidades de los empleados y debe ser mejorado.,False
+17,RRHH,No se nos ha dado suficiente información sobre los derechos de los empleados,Se ha indicado que hay una falta de conocimiento acerca de los derechos laborales de los empleados.,False
+19,Marketing,No sabemos cómo medir el éxito de nuestras campañas,No tenemos una manera clara de determinar el éxito de las campañas que lanzamos.,False
+20,RRHH,Nuestro plan de beneficios es insuficiente,Nuestro plan de beneficios no es lo suficientemente generoso para satisfacer las necesidades de los empleados.,False
+13,RRHH,No se nos ha dado suficiente capacitación para realizar nuestras tareas,No recibimos capacitación suficiente para cumplir con nuestras tareas.,False
+4,RRHH,No estoy seguro de si mi sueldo es justo en comparación con mis colegas,No tengo claro si el salario recibido es proporcional a los demás trabajadores.,False
+18,Legales,No estoy de acuerdo con los términos del contrato,No se aceptan los términos del contrato.,False
+14,Legales,No se nos ha dado suficiente información sobre los procesos de litigio de la empresa,La empresa necesita más información sobre los procesos de litigio.,False
+16,Legales,No se nos ha permitido trabajar desde casa durante la pandemia,"Durante la pandemia, nos ha sido negada la posibilidad de trabajar desde casa.",False
+17,IT,Mi computadora se congela constantemente,La computadora de la persona presenta problemas de estabilidad dado que se congela constantemente.,False
+18,Legales,No se nos ha dado suficiente información sobre los procesos legales de la empresa,La empresa carece de información sobre los procesos legales.,False
+18,Legales,No estoy de acuerdo con las políticas de privacidad,No acepto las políticas de privacidad.,False
+20,RRHH,El equipo de RRHH no responde a mis correos electrónicos,El equipo de RRHH no ha respondido a los correos electrónicos enviados por el remitente.,False
+14,RRHH,El equipo de RRHH no responde a mis correos electrónicos,El equipo de RRHH no brinda respuesta a los correos electrónicos recibidos.,False
+13,RRHH,La empresa no está cumpliendo con el salario mínimo,La empresa no paga el salario mínimo establecido.,False
+18,RRHH,No se nos ha permitido trabajar desde casa durante la pandemia,"Durante la pandemia, no se nos ha permitido trabajar desde casa.",False
+15,IT,Nuestro sitio web no aparece en los primeros resultados de búsqueda,Nuestro sitio web no está siendo mostrado en los primeros resultados de búsqueda de los motores de búsqueda.,False
+7,IT,El correo electrónico no funciona,El correo electrónico no funciona correctamente.,False
+1,Marketing,Nuestras campañas publicitarias no generan resultados,Las campañas publicitarias no están produciendo los resultados deseados.,False
+4,IT,,,
+4,Legales,la verdad todo esto es una estafa piramidal,,
