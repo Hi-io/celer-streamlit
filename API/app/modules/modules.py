@@ -1,6 +1,6 @@
-from fastapi import FastAPI
-from fastapi.responses import RedirectResponse
+import mysql.connector
 import openai
+
 
 api_key = ''
 
@@ -31,14 +31,16 @@ def resume_message(mensaje:str, API_KEY:str):
     result = resultado.choices[0].text.strip()
     return result
 
+def load_solution(data, user, password, host, db):
 
-def get_info_message(message_info:dict, API_KEY:str):
-    user = message_info['user']
-    message = message_info['message']
-    platform = message_info['platform']
-    date = message_info['date']
-    department = identify_department(message, API_KEY)
-    resumed_message = resume_message(message, API_KEY)
-    return {'user': user, 'message': message, 'resumed_message': resumed_message, 'department': department, 'platform': platform, 'date': date}
+    conn = mysql.connector.connect(
+        user = user,
+        password = password,
+        host = host,
+        db = db
+    )
 
+    cursor = conn.cursor()
 
+    insert_query = ("INSERT INTO solutions (user, platform, msg, resume) values (%s, %s, %s, %s)")
+    data = (data[''])
