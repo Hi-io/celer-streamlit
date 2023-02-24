@@ -43,4 +43,4 @@ def load_solution(data, user, password, host, db):
     cursor = conn.cursor()
 
     insert_query = ("INSERT INTO solutions (user, platform, msg, resume) values (%s, %s, %s, %s)")
-    data = (data[''])
+    data = (data['user'], data['platform'], data['msg'], data['resume'])
