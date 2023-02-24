@@ -5,7 +5,7 @@ from modules.modules import *
 
 
 app = FastAPI()
-api_key = ''
+openai.api_key = ''
 
 
 @app.get("/")
@@ -15,18 +15,21 @@ async def root():
 
 @app.get("/resume_messages/")
 async def message_resume(message:str, api_key:str):
+    api_key = openai.api_key
     result = resume_message(message, api_key)
     return result
 
 
 @app.get("/department_identifier/")
 async def department_identifier(message:str, api_key:str):
+    api_key = openai.api_key
     result = identify_department(message, api_key)
     return result
 
 
 @app.post("/data_load/")
 async def data_load(data:dict, api_key:str):
+    api_key = openai.api_key
     timestamp = data['timestamp']
     user = data['user']
     message = data['msg']

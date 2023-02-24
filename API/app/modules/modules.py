@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 import openai
 
-api_key = ""
+api_key = ''
 
 
 def identify_department(mensaje:str, API_KEY:str):
