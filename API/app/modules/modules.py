@@ -1,6 +1,7 @@
 import mysql.connector
 import openai
 from modules.vars import API_KEY, DEPARTMENTS, CONFIG
+import os
 
 
 def identify_department(msg:str):
@@ -41,3 +42,7 @@ def load_solution(data):
 
     cursor.close()
     conn.close()
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
