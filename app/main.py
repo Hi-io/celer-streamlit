@@ -1,9 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
-import sys
 import openai
 from modules.modules import *
-import requests
 
 
 app = FastAPI()

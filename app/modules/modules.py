@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 import openai
 
-
 api_key = ""
 
 
@@ -43,7 +42,3 @@ def get_info_message(message_info:dict, API_KEY:str):
     return {'user': user, 'message': message, 'resumed_message': resumed_message, 'department': department, 'platform': platform, 'date': date}
 
 
-def get_pending_messages(df):
-    dataframe_filter = df.loc[df.sended == False]
-    dataframe_filter['sended'] = True
-    return dataframe_filter.to_dict()
