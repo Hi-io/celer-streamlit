@@ -35,7 +35,5 @@ def parse_email(email_message):
     return {
         'id': message_id,
         'date': date,
-        'subject': subject,
         'sender': sender,
-        'recipient': recipient,
         'body': body }
