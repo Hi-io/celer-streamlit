@@ -1,10 +1,14 @@
 USE celer_db;
 
+DROP TABLE answers;
+DROP TABLE solutions;
+
 CREATE TABLE IF NOT EXISTS solutions (
     id INT NOT NULL AUTO_INCREMENT,
     user VARCHAR(255) NOT NULL,
     platform VARCHAR(50) NOT NULL,
     msg TEXT NOT NULL,
+    resume TEXT NOT NULL,
     PRIMARY KEY (id)
 );
 
