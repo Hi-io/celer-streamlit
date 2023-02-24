@@ -7,34 +7,24 @@ from modules.modules import *
 app = FastAPI()
 openai.api_key = ''
 
-
 @app.get("/")
 async def root():
-    return RedirectResponse(url="/docs/")
-
-
-@app.get("/resume_messages/")
-async def message_resume(message:str, api_key:str):
-    api_key = openai.api_key
-    result = resume_message(message, api_key)
-    return result
-
-
-@app.get("/department_identifier/")
-async def department_identifier(message:str, api_key:str):
-    api_key = openai.api_key
-    result = identify_department(message, api_key)
-    return result
-
+    return RedirectResponse(url="/redocs/")
 
 @app.post("/data_load/")
 async def data_load(data:dict, api_key:str):
+
     api_key = openai.api_key
+
     timestamp = data['timestamp']
     user = data['user']
     message = data['msg']
     platform = data['platform']
-    department = department_identifier(message, api_key)
+
+    department = identify_department(message, api_key)
     resumed_message = resume_message(message, api_key)
-    result = {'user': user, 'message': message, 'resumed_message': resumed_message, 'department': department, 'platform': platform, 'timestamp': timestamp}
+
+    row = {'user': user, 'message': message, 'resumed_message': resumed_message, 'department': department, 'platform': platform, 'timestamp': timestamp}
+
+    
 
