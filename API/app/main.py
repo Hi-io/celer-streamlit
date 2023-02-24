@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
-from modules import modules
+from modules import *
 
 
 app = FastAPI()
@@ -37,3 +37,9 @@ async def pending_message():
 async def pending_solution():
     pending = modules.pending_solution()
     return pending
+
+
+@app.post("/respond_email/")
+async def respond_email(data:str, API_KEY:str):
+    result = modules.response_email(data, API_KEY)
+    return result

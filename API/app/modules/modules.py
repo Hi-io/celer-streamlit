@@ -50,7 +50,7 @@ def pending_solution():
     return # query de el df de las soluciones con pending == True 
 
 
-def response(message:str, API_KEY:str):
+def response_email(message:str, API_KEY:str):
     openai.api_key = API_KEY
     department = identify_department(message, API_KEY)
     resumed_msg = resume_message(message, API_KEY)
