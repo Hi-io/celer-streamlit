@@ -42,5 +42,12 @@ def load_solution(data, user, password, host, db):
 
     cursor = conn.cursor()
 
-    insert_query = ("INSERT INTO solutions (user, platform, msg, resume, timestamp) values (%s, %s, %s, %s)")
+    insert_query = ("INSERT INTO solutions (user, platform, msg, resume, timestamp) values (%s, %s, %s, %s, %s)")
     data = (data['user'], data['platform'], data['msg'], data['resume'], data['timestamp'])
+
+    cursor.execute(insert_query, data)
+
+    conn.commit()
+
+    cursor.close()
+    conn.close()

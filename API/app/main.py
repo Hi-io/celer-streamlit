@@ -4,6 +4,7 @@ import openai
 from modules.modules import *
 
 
+
 app = FastAPI()
 openai.api_key = ''
 
@@ -26,5 +27,5 @@ async def data_load(data:dict, api_key:str):
 
     row = {'user': user, 'message': message, 'resumed_message': resumed_message, 'department': department, 'platform': platform, 'timestamp': timestamp}
 
-    
+    load_solution(row, )
 
