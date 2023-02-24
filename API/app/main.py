@@ -8,8 +8,8 @@ app = FastAPI()
 async def root():
     return RedirectResponse(url="/docs/")
 
-@app.post("/solution_load/")
-async def solution_load(data:dict):
+@app.post("/message_load/")
+async def message_load(data:dict):
 
     timestamp = data['timestamp']
     user = data['user']
@@ -21,5 +21,15 @@ async def solution_load(data:dict):
 
     row = {'user': user, 'message': message, 'resumed_message': resumed_message, 'department': department, 'platform': platform, 'timestamp': timestamp}
 
-    modules.load_solution(row)
+    modules.load_message(row)
 
+@app.post("/pending_message/")
+async def pending_message():
+    pending = modules.pending_message()
+    return pending
+
+
+@app.post("/pending_solution/")
+async def pending_solution():
+    pending = modules.pending_solution()
+    return pending
