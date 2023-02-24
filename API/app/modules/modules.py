@@ -1,35 +1,56 @@
-from fastapi import FastAPI
-from fastapi.responses import RedirectResponse
-from modules import modules
-
-app = FastAPI()
-
-@app.get("/")
-async def root():
-    return RedirectResponse(url="/docs/")
-
-@app.post("/message_load/")
-async def message_load(data:dict):
-
-    timestamp = data['timestamp']
-    user = data['user']
-    message = data['msg']
-    platform = data['platform']
-
-    department = modules.identify_department(message)
-    resumed_message = modules.resume_message(message)
-
-    row = {'user': user, 'message': message, 'resumed_message': resumed_message, 'department': department, 'platform': platform, 'timestamp': timestamp}
-
-    modules.load_message(row)
-
-@app.post("/pending_message/")
-async def pending_message():
-    pending = modules.pending_message()
-    return pending
+import mysql.connector
+import openai
+from modules.vars import API_KEY, DEPARTMENTS, CONFIG
+import os
 
 
-@app.post("/pending_solution/")
-async def pending_solution():
-    pending = modules.pending_solution()
-    return pending
+def identify_department(msg:str):
+    # Categorizar el departamento
+    openai.api_key = API_KEY
+    result = openai.Completion.create(
+    model="text-davinci-003",
+    prompt=f"Classify the following ticket into one of the following departments: {DEPARTMENTS}\n\nmessage: {msg}\nDepartment:",
+    max_tokens=4,
+    stop=None,
+    )
+    return result.choices[0].text.strip()
+
+
+def resume_message(msg:str):
+
+    openai.api_key = API_KEY
+    result = openai.Completion.create(
+    model="text-davinci-003",
+    prompt=f"Summarize the following message: {msg}\nSummary:",
+    max_tokens=400,
+    stop=None,
+    )
+    return result.choices[0].text.strip()
+
+def load_message(data):
+
+    conn = mysql.connector.connect(**CONFIG)
+
+    cursor = conn.cursor()
+
+    insert_query = ("INSERT INTO solutions (user, platform, msg, resume, timestamp) values (%s, %s, %s, %s, %s)")
+    data = (data['user'], data['platform'], data['msg'], data['resume'], data['timestamp'])
+
+    cursor.execute(insert_query, data)
+
+    conn.commit()
+
+    cursor.close()
+    conn.close()
+
+def pending_message():
+    return # todo el df de mensajes no contestados en formato JSON
+
+def pending_solution():
+    return # query de el df de las soluciones con pending == True 
+
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
