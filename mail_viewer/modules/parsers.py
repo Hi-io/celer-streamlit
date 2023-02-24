@@ -34,6 +34,7 @@ def parse_email(email_message):
     # Return a dictionary containing the parsed email data
     return {
         'id': message_id,
-        'date': date,
-        'sender': sender,
-        'body': body }
+        'timestamp': date,
+        'user': sender,
+        'msg': body,
+        'platform': 'mail'}
