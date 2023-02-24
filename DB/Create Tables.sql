@@ -9,13 +9,15 @@ CREATE TABLE IF NOT EXISTS solutions (
     platform VARCHAR(50) NOT NULL,
     msg TEXT NOT NULL,
     resume TEXT NOT NULL,
+    timestamp FLOAT NOT NULL,
     PRIMARY KEY (id)
 );
 
 CREATE TABLE IF NOT EXISTS answers (
     id INT NOT NULL AUTO_INCREMENT,
     id_solution INT NOT NULL,
-    answer TEXT,
+    answer TEXT NOT NULL,
+    timestamp FLOAT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (id_solution) REFERENCES solutions(id)
 );
