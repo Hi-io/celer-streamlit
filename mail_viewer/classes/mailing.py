@@ -38,6 +38,7 @@ class EmailProcessor:
             email_message = email.message_from_bytes(raw_email)
             email_message = parse_email(email_message)
 
+            mail_id = email_message['id']
             mail_date = email_message['date']
             client_email = email_message['sender']
             email_body = email_message['body']
@@ -50,13 +51,12 @@ class EmailProcessor:
             }
 
             print(data)
-            # response = requests.post(api_url, json=data)
+            response = requests.post(api_url, json=data)
 
-            # if response.status_code == 200:
-            #     print(f'Successfully shared email to API')
-            # else:
-            #     print(
-            #         f'Error sharing email to API. Status code: {response.status_code}')
+            if response.status_code == 200:
+                print(f'Successfully shared email to API')
+            else:
+                print(f'Error sharing email with id {mail_id} to API. Status code: {response.status_code}')
 
     def run(self, api_url, criteria, delay_seconds=10):
         while True:
