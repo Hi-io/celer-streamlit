@@ -3,29 +3,24 @@ from fastapi.responses import RedirectResponse
 import openai
 from modules.modules import *
 
-
-
 app = FastAPI()
-openai.api_key = ''
 
 @app.get("/")
 async def root():
-    return RedirectResponse(url="/redocs/")
+    return RedirectResponse(url="/redoc/")
 
-@app.post("/data_load/")
-async def data_load(data:dict, api_key:str):
-
-    api_key = openai.api_key
+@app.post("/solution_load/")
+async def solution_load(data:dict):
 
     timestamp = data['timestamp']
     user = data['user']
     message = data['msg']
     platform = data['platform']
 
-    department = identify_department(message, api_key)
-    resumed_message = resume_message(message, api_key)
+    department = identify_department(message)
+    resumed_message = resume_message(message)
 
     row = {'user': user, 'message': message, 'resumed_message': resumed_message, 'department': department, 'platform': platform, 'timestamp': timestamp}
 
-    load_solution(row, )
+    load_solution(row)
 

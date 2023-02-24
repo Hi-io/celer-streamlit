@@ -1,44 +1,34 @@
 import mysql.connector
 import openai
+from modules.vars import API_KEY, DEPARTMENTS, CONFIG
 
 
-api_key = ''
-
-
-def identify_department(mensaje:str, API_KEY:str):
+def identify_department(msg:str):
     # Categorizar el departamento
     openai.api_key = API_KEY
-    categorias = ["IT", "Marketing", "RRHH", "Legales"]
-    resultado = openai.Completion.create(
+    result = openai.Completion.create(
     model="text-davinci-003",
-    prompt=f"Clasificar el siguiente ticket en una de las siguientes categorías: {categorias}\n\nmensaje: {mensaje}\nCategoría:",
+    prompt=f"Classify the following ticket into one of the following departments: {DEPARTMENTS}\n\nmessage: {msg}\nDepartment:",
     max_tokens=4,
     stop=None,
     )
-    return resultado.choices[0].text.strip()
+    return result.choices[0].text.strip()
 
 
-def resume_message(mensaje:str, API_KEY:str):
-    # Categorizar el departamento
+def resume_message(msg:str):
+
     openai.api_key = API_KEY
-    categorias = ["IT", "Marketing", "RRHH", "Legales"]
-    resultado = openai.Completion.create(
+    result = openai.Completion.create(
     model="text-davinci-003",
-    prompt=f"Resume el siguiente mensaje: {mensaje}\nResumen:",
+    prompt=f"Summarize the following message: {msg}\nSummary:",
     max_tokens=400,
     stop=None,
     )
-    result = resultado.choices[0].text.strip()
-    return result
+    return result.choices[0].text.strip()
 
-def load_solution(data, user, password, host, db):
+def load_solution(data):
 
-    conn = mysql.connector.connect(
-        user = user,
-        password = password,
-        host = host,
-        db = db
-    )
+    conn = mysql.connector.connect(**CONFIG)
 
     cursor = conn.cursor()
 
