@@ -50,6 +50,19 @@ def pending_solution():
     return # query de el df de las soluciones con pending == True 
 
 
+def response(message:str, API_KEY:str):
+    openai.api_key = API_KEY
+    department = identify_department(message, API_KEY)
+    resumed_msg = resume_message(message, API_KEY)
+    response = openai.Completion.create(
+        engine="text-davinci-002",
+        prompt = f"I want you to respond to an email, it is directed to the department {department}, this is the summarized message {resumed_msg} and this is the full message: {message}\nMessage:",
+        max_tokens=400,
+        stop=None
+    )
+    email_reply = response.choices[0].text
+    return email_reply
+
 
 if __name__ == "__main__":
     import uvicorn

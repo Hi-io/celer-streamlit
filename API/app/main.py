@@ -2,11 +2,14 @@ from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 from modules import modules
 
+
 app = FastAPI()
+
 
 @app.get("/")
 async def root():
     return RedirectResponse(url="/docs/")
+
 
 @app.post("/message_load/")
 async def message_load(data:dict):
@@ -22,6 +25,7 @@ async def message_load(data:dict):
     row = {'user': user, 'message': message, 'resumed_message': resumed_message, 'department': department, 'platform': platform, 'timestamp': timestamp}
 
     modules.load_message(row)
+
 
 @app.post("/pending_message/")
 async def pending_message():
