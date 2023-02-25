@@ -1,4 +1,4 @@
-# CelerConnect
+# CelerAI
 
 CelerConnect is a platform that uses artificial intelligence to automate and accelerate communication between companies and their customers. It's capable of receiving messages through different media such as Discord, WhatsApp, email, etc. and categorizing them to determine which department they belong to. If it's a common problem with a replicable solution, our AI will automatically respond. If not, the AI will send a message to the customer informing them that their request has been received and will be attended to soon. Meanwhile, the AI will summarize and send it to the corresponding department.
 
